@@ -5,16 +5,14 @@ subdir = "yoo"
 rssfull = "true"
 faviconcache = "fmgy"
 faviconbuster = "TimmieIsMyFate"
-jquerycdn = true
+jquerycdn = false
 
 ### BGN: Structured Data ###
-  siteStartYear = 2021
-
-  description = "The chronicles of ᜌᜓᜃᜒ (Yuki ・ 雪亮) / Yahuhanan Yukia Sese Cuneta."
+  description = "YourOnly.One Pages"
   license = "https://im.youronly.one/p/legal-notice/"
   #issn = ""
   #awards = [""]
-  images = ["https://rsc.youronly.one/img/y/YOOki_Chronicles.webp"]
+  images = ["https://rsc.youronly.one/img/y/Yuki_flag-300h.webp"]
 
   name = "YourOnly.One" # your company name
   primaryauthor = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)" # Used as primary author if no specific is set
@@ -28,9 +26,9 @@ jquerycdn = true
   copyrightnotice = "JC John Sese Cuneta"
   copyrightyear = "2021"      # same as datePublished
 
-  logourl = "https://rsc.youronly.one/img/y/YOOki_Chronicles.webp" # Used in structured data as logo url
-  keywords = ["YourOnly.One", "Yuki", "ᜌᜓᜃᜒ", "Chronicles"] # Can be overriden per page
-  imageurl = "https://rsc.youronly.one/img/y/YOOki_Chronicles.webp" # Used in structured data as background image
+  logourl = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp" # Used in structured data as logo url
+  keywords = ["YourOnly.One", "Yuki", "ᜌᜓᜃᜒ"] # Can be overriden per page
+  imageurl = "https://rsc.youronly.one/img/y/Yuki_flag-300h.webp" # Used in structured data as background image
 
   contact = "" # Primary email address
   phone = "" # Primary phone
@@ -40,83 +38,40 @@ jquerycdn = true
   pricerange = "" # Used in structured data as price range
 ### END: Structured Data ###
 
-### BGN: Theme settings
-  background = "#EBF6F7"
-  backgroundImage = "https://rsc.youronly.one/img/assets/vintage-933793_1920.jpg"
-  linkColor = "blue"
+### BGN: Theme Settings ###
+  #disqus = "" # disqus account name
+  #extraHead = "<script src="xxxx.js"></script>"
+  #extraCSSFiles = ["css/foo.css", "css/bar.css"]
+  mainSections = ["pages"]
 
-  # dark mode
-  defaultDark = true
-  backgroundDark = "#202124"
-  backgroundImageDark = "https://rsc.youronly.one/img/assets/abstract-1780252_1280.png"
-  darkLinkColor = "gold"
-  darkNav = true
-  dark404 = true
+  ## In a post’s front matter, include a keyword images with a value of a list of URLs of images that will be used for Twitter Cards.
+  twitterCards = true
 
-  avatar = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"
-  headerTitle = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"
-  motto = "If this is not the end of oblivion, then I shall live everyday as if my life were to end this very day."
+  ## Insert content on every post
+  #postHeaderContent = ""
+  #postFooterContent = "<br/><br/><p>Subscribe：<a target='_blank' href='https://mailchi.mp/a1a0d59e7a19/joway'>Joway's Blog</a></p>"
 
-  #maxTags = 5
-  #footerBottomText = ""
-  rss = true
+  [[socials]]
+  name = "《 Home 》"
+  link = "https://im.youronly.one"
 
-  # utterancesRepo = ""
+  [[socials]]
+  name = "《 The YOOki (柳紀 ・ 유 기) Chronicles 》"
+  link = "https://im.youronly.one/yuki/"
 
-  # valine = true
-  # LEANCLOUD_APP_ID = ""
-  # LEANCLOUD_APP_KEY = ""
-
-  #email = ""
-  twitter = "YourOnlyOne7"
-  facebook = "YourOnly.One0"
-  instagram = "YourOnly.One"
-  #mastodon = "https://mastodon.social/@youronlyone" # Icon no longer showing
-  linkedin = "youronlyone"
-  #github = ""
-  #stackoverflow = ""
-  #codepen = ""
-
-  #favicon = "/favicon.ico"
-
-  highlightjs = true
-  highlightjsCDN = "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"
-  highlightjsExtraLanguages = ["ocaml"]
-  highlightjsTheme = "gruvbox-light"
-  highlightjsThemeDark = "gruvbox-dark"
-
-  # search
-  enableSearch = true
-
-  # options
-  showSummaryCoverInPost = true
-  hasTwitterEmbed = true
-  reversePostAndAside = true
-  shareInAside = false
-  showInAside = true  # This is our own custom setting
-  fixedNav = true
-  collapsibleTags = true
-  collapseBySummary = false
-
-  #[params.advanced]
-  #  customCSS = ["css/custom.css"]
-  #  customJSBefore = []
-  #  customJS = []
-
-  #[params.experimental]
-  #  jsDate = true
-  #  jsDateFormat = "yyyy年MM月dd日"
-
-### END: Theme settings
+  [[socials]]
+  name = "《 YourOnly.One™ Love & Relationship 》"
+  link = "https://im.youronly.one/love/"
+### END: Theme Settings ###
 
 ### BGN: Other Settings ###
   [author]                                                    # .Param "author.key"
     name = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"
     email = ""
     homepage = "https://youronly.one"
-    avatar = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"
     rel = "me noopener"
     #rel = "noopener external nofollow"
+    avatar = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"
 
   [siteowner]
     given_name = "Yahuhanan Yukia"

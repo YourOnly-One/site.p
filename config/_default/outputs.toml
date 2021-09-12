@@ -2,13 +2,13 @@
 page = ["HTML"]                                             # default: HTML
 
 # <domain>/atom.xml
-home = ["HTML", "JSON", "Atom", "RSS"]                      # default: HTML, RSS
+home = ["HTML"]                     # default: HTML, RSS
 
 # <domain>/posts/atom.xml
-section = ["HTML", "Atom", "RSS"]                           # default: HTML, RSS
+section = ["HTML"]                            # default: HTML, RSS
 
 # <domain>/tags/atom.xml, <domain>/categories/atom.xml
-taxonomy = ["HTML", "Atom", "RSS"]                          # default: HTML, RSS
+taxonomy = ["HTML"]                         # default: HTML, RSS
 
 # <domain>/tags/mytag/atom.xml, <domain>/categories/mycat/atom.xml
-term = ["HTML", "Atom", "RSS"]                              # default: HTML, RSS
+term = ["HTML"]                             # default: HTML, RSS
