@@ -1,10 +1,5 @@
-#disableCSS = false
-#disableHTML = false
-#disableJS = false
-#disableJSON = false
-#disableSVG = false
-#disableXML = false
 minifyOutput = false                                    # should be false to keep the casing of hreflang
+
 [tdewolff]
   #[tdewolff.css]
     #keepCSS2 = true
