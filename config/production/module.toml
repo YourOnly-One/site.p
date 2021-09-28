@@ -16,7 +16,7 @@
   path = "github.com/YourOnly-One/hugo-atom-feed"
 
 [[imports]]
-  path = "github.com/joway/hugo-theme-yinyang"
+  path = "github.com/techmagus/hugo-theme-yinyang"
 
 [[imports]]
   path = "github.com/YourOnly-One/yoo-hugo-content"
