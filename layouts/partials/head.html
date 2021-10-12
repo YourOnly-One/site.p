@@ -6,29 +6,9 @@
   <!-- END: YourOnly.One Head-01-Top -->
 
   <!-- BGN: All sitemap and feed links -->
-  <link rel="sitemap" type="application/xml" href="https://YourOnly.One/sitemap.index.xml" />
-  <link rel="sitemap" type="application/xml" href="https://YourOnly.One/sitemap-multilang.xml" />
-  <link rel="sitemap" type="application/xml" href="https://YourOnly.One/sitemap-general.xml" />
-
-  <link rel="alternate" type="application/atom+xml" href="https://YourOnly.One/yuki/ko/feed.xml" hreflang="ko" />
-  <link rel="alternate" type="application/atom+xml" href="https://YourOnly.One/yuki/ja/feed.xml" hreflang="ja" />
-  <link rel="alternate" type="application/atom+xml" href="https://YourOnly.One/yuki/feed.xml" hreflang="en-PH" />
-  <link rel="sitemap" type="application/xml" href="https://YourOnly.One/yuki/ko/sitemap.xml" hreflang="ko" />
-  <link rel="sitemap" type="application/xml" href="https://YourOnly.One/yuki/ja/sitemap.xml" hreflang="ja" />
-  <link rel="sitemap" type="application/xml" href="https://YourOnly.One/yuki/sitemap.xml" hreflang="en-PH" />
-  <link rel="alternate" type="application/json" href="https://YourOnly.One/yuki/ko/index.json" hreflang="ko" />
-  <link rel="alternate" type="application/json" href="https://YourOnly.One/yuki/ja/index.json" hreflang="ja" />
-  <link rel="alternate" type="application/json" href="https://YourOnly.One/yuki/index.json" hreflang="en-PH" />
-
-  <link rel="alternate" type="application/atom+xml" href="https://YourOnly.One/snoworld/ko/feed.xml" hreflang="ko" />
-  <link rel="alternate" type="application/atom+xml" href="https://YourOnly.One/snoworld/ja/feed.xml" hreflang="ja" />
-  <link rel="alternate" type="application/atom+xml" href="https://YourOnly.One/snoworld/feed.xml" hreflang="en-PH" />
-  <link rel="sitemap" type="application/xml" href="https://YourOnly.One/snoworld/ko/sitemap.xml" hreflang="ko" />
-  <link rel="sitemap" type="application/xml" href="https://YourOnly.One/snoworld/ja/sitemap.xml" hreflang="ja" />
-  <link rel="sitemap" type="application/xml" href="https://YourOnly.One/snoworld/sitemap.xml" hreflang="en-PH" />
-  <link rel="alternate" type="application/json" href="https://YourOnly.One/snoworld/ko/index.json" hreflang="ko" />
-  <link rel="alternate" type="application/json" href="https://YourOnly.One/snoworld/ja/index.json" hreflang="ja" />
-  <link rel="alternate" type="application/json" href="https://YourOnly.One/snoworld/index.json" hreflang="en-PH" />
+  <link rel="sitemap" type="application/xml" href="https://im.youronly.one/sitemap.index.xml" />
+  <link rel="sitemap" type="application/xml" href="https://im.youronly.one/sitemap-multilang.xml" />
+  <link rel="sitemap" type="application/xml" href="https://im.youronly.one/sitemap-general.xml" />
   <!-- END: All sitemap and feed links -->
 
   {{- /* We already have this
@@ -36,11 +16,9 @@
   */ -}}
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  {{- /* We already have this
+  {{- /* YourOnlyOne: We already have this
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-  */ -}}
-  <meta name="author" content="{{ .Site.Author.name }}" />
-  {{- /* We already have this
+    <meta name="author" content="{{ .Site.Author.name }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
   */ -}}
   {{- if .Site.Params.staticPrefix -}}
@@ -52,27 +30,30 @@
   <link rel="icon" href="{{ .Site.Params.favicon }}" />
   <link rel="shortcut" href="{{ .Site.Params.favicon }}" />
   {{- end -}}
-  <link rel="alternate" type="application/atom+xml" href="{{.Site.BaseURL}}index.xml" title="{{ .Site.Title }}">
+  {{- /* YourOnlyOne: We already have this
+    <link rel="alternate" type="application/atom+xml" href="{{.Site.BaseURL}}index.xml" title="{{ .Site.Title }}">
+  */ -}}
 
   {{- /* partial "seo" . */ -}}
 
-  {{- if .IsHome -}}
   <title>{{ .Site.Title }}</title>
-  <meta property="og:title" content="{{ .Site.Title }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="{{ .Site.Params.description }}" />
-  <meta name="description" content="{{ .Site.Params.description }}" />
-  {{- else -}}
-  <title>{{ .Title }}</title>
-  <meta property="og:title" content="{{ .Title }}" />
-  <meta property="og:type" content="article" />
-  <meta property="og:description" content="{{ default .Summary .Description | plainify }}" />
-  <meta name="description" content="{{ default .Summary .Description | plainify }}" />
-  {{- end }}
-  <meta property="og:locale" content="{{ .Language.Params.languagecodehtml }}" />
-  {{- if .Params.album -}}
-  <meta property="og:image" content="{{ .Params.album }}" />
-  {{ end }}
+  {{- /* YourOnly.One: We already have this
+    {{- if .IsHome -}}
+      <meta property="og:title" content="{{ .Site.Title }}" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="{{ .Site.Params.description }}" />
+      <meta name="description" content="{{ .Site.Params.description }}" />
+    {{- else -}}
+      <meta property="og:title" content="{{ .Title }}" />
+      <meta property="og:type" content="article" />
+      <meta property="og:description" content="{{ default .Summary .Description | plainify }}" />
+      <meta name="description" content="{{ default .Summary .Description | plainify }}" />
+    {{- end }}
+    <meta property="og:locale" content="{{ .Language.Params.languagecodehtml }}" />
+    {{- if .Params.album -}}
+      <meta property="og:image" content="{{ .Params.album }}" />
+    {{ end }}
+  */ -}}
 
   {{ with resources.Get "css/index.css" | minify }}
     <style>{{ .Content | safeCSS }}</style>
@@ -98,7 +79,7 @@
     (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
   </script> -->
 
-  {{- /* We already have this
+  {{- /* YourOnly.One: We already have this
     {{ if .Site.Params.TwitterCards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
   */ -}}
 
