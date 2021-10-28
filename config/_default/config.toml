@@ -1,5 +1,5 @@
 ####### Base Config #######
-  baseURL = "https://im.youronly.one/p"
+  baseURL = "https://im.youronly.one/p/"
   title = "YourOnly.One™ Pages"
   copyright = ""                                          # we are using our own footer
   timeZone = "Asia/Manila"

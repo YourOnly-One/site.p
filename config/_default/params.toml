@@ -32,7 +32,7 @@ jquerycdn = false
 
 	[[socials]]
 	name = "《 Home 》"
-	link = "https://im.youronly.one"
+	link = "https://im.youronly.one/"
 
 	[[socials]]
 	name = "《 The YOOki (柳紀 ・ 유 기) Chronicles 》"
@@ -48,12 +48,12 @@ jquerycdn = false
 		org = "yelosan"
 
 		#issn = ""
-		acquirelicensepage = "https://youronly.one/p/legal-notice"
+		acquirelicensepage = "https://youronly.one/p/legal-notice/"
 		copyrightnotice = "Copyleft 🄯 CC-BY-SA 4.0 International by JC John Sese Cuneta"
 		credittext = "YourOnly.One (https://youronly.one)"
 		datefirstpublished = "2003-12-12"
 		#isblog = true
-		license = "https://youronly.one/p/legal-notice"
+		license = "https://youronly.one/p/legal-notice/"
 		publisher = "https://yelosan.youronly.one/"
 		sameas = [
 			"https://mastodon.social/@YourOnlyOne",
