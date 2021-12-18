@@ -33,14 +33,27 @@ jquerycdn = false
 
 	[[socials]]
 	name = "《 Home 》"
-	link = "https://im.youronly.one/"
+	link = "https://im.youronly.one"
 
 	[[socials]]
-	name = "《 The YOOki (柳紀 ・ 유 기) Chronicles 》"
+	#name = "《 The YOOki (柳紀 ・ 유 기) Chronicles 》"
+	name = "《 YOOki Chronicles 》"
 	link = "https://im.youronly.one/yuki/"
 
 	[[socials]]
-	name = "《 YourOnly.One™ Love & Relationship 》"
+	name = "《 Snoworld 》"
+	link = "https://im.youronly.one/snoworld/"
+
+	[[socials]]
+	name = "《 Way of Believers 》"
+	link = "https://im.youronly.one/way/"
+
+	[[socials]]
+	name = "《 techmagus 》"
+	link = "https://im.youronly.one/techmagus/"
+
+	[[socials]]
+	name = "《 Love 》"
 	link = "https://im.youronly.one/love/"
 ### END: Theme Settings ###
 
