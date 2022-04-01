@@ -71,8 +71,9 @@ googleadsense = "ca-pub-8360283248006398"
 		license = "https://youronly.one/p/legal-notice/"
 		publisher = "https://yelosan.youronly.one/"
 		sameas = [
-			"https://mastodon.social/@YourOnlyOne",
+			"https://mastodon.social/@youronlyone",
 			"https://pixelfed.social/youronlyone",
+			"https://youtube.com/YourOnlyONEofcl",
 			"https://twitter.com/YourOnlyONEofcl",
 			"https://instagram.com/YourOnly.One",
 			"https://facebook.com/YourOnly.ONE.ofcl"
