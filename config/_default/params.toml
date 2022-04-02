@@ -1,0 +1,100 @@
+# YourOnly.One: Do not use mainSections, it's conflicting with the hugo-theme-yinyang theme.
+#mainSections = ["blog", "posts"]                                             # Hugo default
+mainTypes = ["article", "sitepage", "review"]                                                # YourOnly.One
+
+subdir = "yoo"
+rssfull = "true"
+faviconcache = "fmgy"
+faviconbuster = "TimmieIsMyFate"
+jquerycdn = false
+websubhubs = ["https://pubsubhubbub.appspot.com/", "https://youronlyone.superfeedr.com/", "https://pubsubhubbub.superfeedr.com/", "https://websubhub.com/hub"]
+
+googleadsense = "ca-pub-8360283248006398"
+
+### BGN: Structured Data ###
+	description = "YourOnly.One Pages"
+	license = "https://im.youronly.one/p/legal-notice/"
+	keywords = ["YourOnly.One", "Yuki", "ᜌᜓᜃᜒ"] # Can be overriden per page
+	images = ["https://rsc.youronly.one/img/y/Yuki_flag-300h.webp", "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"]
+	#copyright = ""
+### END: Structured Data ###
+
+### BGN: Theme Settings ###
+	#disqus = "" # disqus account name
+	#extraHead = "<script src="xxxx.js"></script>"
+	#extraCSSFiles = ["css/foo.css", "css/bar.css"]
+	mainSections = ["pages"]
+
+	## In a post’s front matter, include a keyword images with a value of a list of URLs of images that will be used for Twitter Cards.
+	twitterCards = true
+
+	## Insert content on every post
+	#postHeaderContent = ""
+	#postFooterContent = "<br/><br/><p>Subscribe：<a target='_blank' href='https://mailchi.mp/a1a0d59e7a19/joway'>Joway's Blog</a></p>"
+
+	[[socials]]
+	name = "《 Home 》"
+	link = "https://im.youronly.one"
+
+	[[socials]]
+	#name = "《 The YOOki (柳紀 ・ 유 기) Chronicles 》"
+	name = "《 YOOki Chronicles 》"
+	link = "https://im.youronly.one/yuki/"
+
+	[[socials]]
+	name = "《 Snoworld 》"
+	link = "https://im.youronly.one/snoworld/"
+
+	[[socials]]
+	name = "《 Way of Believers 》"
+	link = "https://im.youronly.one/way/"
+
+	[[socials]]
+	name = "《 techmagus 》"
+	link = "https://im.youronly.one/techmagus/"
+
+	[[socials]]
+	name = "《 Love 》"
+	link = "https://im.youronly.one/love/"
+### END: Theme Settings ###
+
+### BGN: Other Settings ###
+	[semweb]
+		org = "yelosan"
+
+		#issn = ""
+		acquirelicensepage = "https://youronly.one/p/legal-notice/"
+		copyrightnotice = "Copyleft 🄯 CC-BY-SA 4.0 International by JC John Sese Cuneta"
+		credittext = "YourOnly.One (https://youronly.one)"
+		datefirstpublished = "2003-12-12"
+		#isblog = true
+		license = "https://youronly.one/p/legal-notice/"
+		publisher = "https://yelosan.youronly.one/"
+		sameas = [
+			"https://mastodon.social/@youronlyone",
+			"https://pixelfed.social/youronlyone",
+			"https://youtube.com/YourOnlyONEofcl",
+			"https://twitter.com/YourOnlyONEofcl",
+			"https://instagram.com/YourOnly.One",
+			"https://facebook.com/YourOnly.ONE.ofcl"
+		]
+
+		[[semweb.persons]]
+			person = "yuki"
+			#id = ""
+			#name = ""ᜌᜓᜃᜒ (Yuki | 雪亮)"
+			#url = ""
+			#avatar = ""
+			#rel = "noopener external nofollow"
+
+	[verify]
+		flattr = "4j1gl5"
+		naver = "0212955cb24d6e2c67f92be3c7833cae8a98fa8e"
+		wot = "06c7ef6e7986586661ef"
+		ocs = "c563648adcfa021a0dfd3d3d8f0be64a"
+
+	[analytics]
+		microanalyticsio = "ZwSg9rf6GA"
+		cfwebanalytics = "07a05e5302d1458da3561ce41791e284"
+		microsoftclarity = "63ddi0b99e"
+### END: Other Settings ###
