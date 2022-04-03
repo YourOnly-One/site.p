@@ -1,4 +1,4 @@
-module p
+module gitlab.com/youronlyone/site.p
 
 go 1.18
 
