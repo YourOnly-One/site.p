@@ -6,7 +6,7 @@
   "lang": "en-PH",
   "categories": ["YourOnly.One"],
   "display": "minimal-ui",
-  "scope": "https://im.youronly.one",
+  "scope": "https://im.youronly.one/p/",
   "start_url": "https://im.youronly.one/p/",
   "icons": [
     {
