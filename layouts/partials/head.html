@@ -56,11 +56,12 @@
   */ -}}
 
   {{ with resources.Get "css/index.css" | minify }}
-    <style>{{ .Content | safeCSS }}</style>
+    <link rel="stylesheet" href="{{ .RelPermalink }}" crossorigin="anonymous" media="all" type="text/css" />
   {{ end }}
   {{ with resources.Get "css/flexboxgrid-6.3.1.min.css" | minify }}
-    <style>{{ .Content | safeCSS }}</style>
+    <link rel="stylesheet" href="{{ .RelPermalink }}" crossorigin="anonymous" media="all" type="text/css" />
   {{ end }}
+  <link rel="stylesheet" href="{{ (resources.Get "css/theme.css" | minify).RelPermalink }}" crossorigin="anonymous" media="all" type="text/css" />
 
   {{ range .Site.Params.extraCSSFiles -}}
   <link rel="stylesheet" href="{{ $.Site.Params.staticPrefix }}{{ . | relURL }}">
@@ -73,7 +74,7 @@
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
   <!-- quicklink require -->
   <!-- <script>
-    /* Disable minification (remove `.min` from URL path) for more info 
+    /* Disable minification (remove `.min` from URL path) for more info
     https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver
     */
     (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
