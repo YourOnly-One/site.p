@@ -9,7 +9,7 @@ faviconbuster = "TimmieIsMyFate"
 jquerycdn = false
 websubhubs = ["https://pubsubhubbub.appspot.com/", "https://youronlyone.superfeedr.com/", "https://pubsubhubbub.superfeedr.com/", "https://websubhub.com/hub"]
 
-googleadsense = "ca-pub-8360283248006398"
+#googleadsense = "ca-pub-8360283248006398"
 
 ### BGN: Structured Data ###
 	description = "YourOnly.One Pages"
@@ -46,7 +46,7 @@ googleadsense = "ca-pub-8360283248006398"
 	link = "https://im.youronly.one/snoworld/"
 
 	[[socials]]
-	name = "《 Way of Believers 》"
+	name = "《 One Way Faith 》"
 	link = "https://im.youronly.one/way/"
 
 	[[socials]]
@@ -62,13 +62,14 @@ googleadsense = "ca-pub-8360283248006398"
 	[semweb]
 		org = "yelosan"
 
+		#isni = ""
 		#issn = ""
-		acquirelicensepage = "https://youronly.one/p/legal-notice/"
+		acquirelicensepage = "https://im.youronly.one/p/legal-notice/"
 		copyrightnotice = "Copyleft 🄯 CC-BY-SA 4.0 International by JC John Sese Cuneta"
-		credittext = "YourOnly.One (https://youronly.one)"
+		credittext = "I'M YourOnly.One (https://im.youronly.one/)"
 		datefirstpublished = "2003-12-12"
 		#isblog = true
-		license = "https://youronly.one/p/legal-notice/"
+		license = "https://im.youronly.one/p/legal-notice/"
 		publisher = "https://yelosan.youronly.one/"
 		sameas = [
 			"https://mastodon.social/@youronlyone",
@@ -76,7 +77,11 @@ googleadsense = "ca-pub-8360283248006398"
 			"https://youtube.com/YourOnlyONEofcl",
 			"https://twitter.com/YourOnlyONEofcl",
 			"https://instagram.com/YourOnly.One",
-			"https://facebook.com/YourOnly.ONE.ofcl"
+			"https://facebook.com/YourOnly.ONE.ofcl",
+			"https://www.pinterest.com/YourOnlyONEofcl",
+			"https://www.eyeem.com/u/YourOnlyOne",
+			"https://www.goodreads.com/youronlyone",
+			"https://vero.co/youronlyone"
 		]
 
 		[[semweb.persons]]
