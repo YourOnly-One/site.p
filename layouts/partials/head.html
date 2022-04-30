@@ -36,18 +36,18 @@
 
   {{- /* partial "seo" . */ -}}
 
-  <title>{{ .Site.Title }}</title>
+  <title class="p-name">{{ .Site.Title }}</title>
   {{- /* YourOnly.One: We already have this
     {{- if .IsHome -}}
       <meta property="og:title" content="{{ .Site.Title }}" />
       <meta property="og:type" content="website" />
       <meta property="og:description" content="{{ .Site.Params.description }}" />
-      <meta name="description" content="{{ .Site.Params.description }}" />
+      <meta name="description" content="{{ .Site.Params.description }}" class="p-summary" />
     {{- else -}}
       <meta property="og:title" content="{{ .Title }}" />
       <meta property="og:type" content="article" />
       <meta property="og:description" content="{{ default .Summary .Description | plainify }}" />
-      <meta name="description" content="{{ default .Summary .Description | plainify }}" />
+      <meta name="description" content="{{ default .Summary .Description | plainify }}" class="p-summary" />
     {{- end }}
     <meta property="og:locale" content="{{ .Language.Params.languagecodehtml }}" />
     {{- if .Params.album -}}

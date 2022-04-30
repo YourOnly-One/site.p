@@ -9,14 +9,14 @@
       {{ partial "youronly.one-body-01-top.html" . }}
     {{- end }}
   <!-- END: YourOnly.One Body-01-Top -->
-  <article class="post {{ .Site.Language.LanguageName }}" id="article" data-clarity-region="article">
+  <article class="{{ .Site.Language.LanguageName }}" id="article">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="h-entry post col-xs-12" data-clarity-region="article">
         <div class="site-header">
           {{ partial "header.html" . }}
         </div>
         <header class="post-header">
-          <h1 class="post-title">{{ .Title }}</h1>
+          <h1 class="p-name post-title">{{ .Title }}</h1>
           {{- /* YourOnly.One: not needed
             {{ if in .Site.Params.mainSections .Type }}
               <div class="row post-desc">
@@ -39,7 +39,7 @@
           */ -}}
         </header>
 
-        <div class="post-content markdown-body">
+        <div class="e-content post-content markdown-body">
           {{ .Site.Params.postHeaderContent | safeHTML }}
           {{ .Content }}
         </div>
@@ -48,7 +48,7 @@
           <div class="col-xs-12">
             {{ range .Params.categories }}
             <div class="post-category">
-              <a href="{{ site.LanguagePrefix }}/categories/{{ lower . }}/">
+              <a href="{{ site.LanguagePrefix }}/categories/{{ lower . }}/" class="p-category" rel="category">
                 {{ . }}
               </a>
             </div>
@@ -69,6 +69,10 @@
           {{ end }}
           <!-- split -->
           <div class="singlesplit"></div>
+          <div class="post-comments">
+            {{ template "_internal/webmention.html" . }}
+            <div id="webmentions"></div>
+          </div>
           {{ if .Site.Params.disqus }}
           <div class="post-comments">
             {{ partial "disqus.html" . }}

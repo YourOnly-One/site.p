@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {{/* Multilang support for lang attribute */}}
-<html lang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}" prefix="og: https://ogp.me/ns#{{ if in .Site.Params.mainTypes .Type }} article: https://ogp.me/ns/article#{{ end }}">
+<html lang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}" prefix="og: https://ogp.me/ns#{{ if in .Site.Params.mainTypes .Type }} article: https://ogp.me/ns/article#{{ end }}" class="h-feed">
 {{ partial "head.html" . }}
 
 <body>
@@ -9,7 +9,7 @@
       {{ partial "youronly.one-body-01-top.html" . }}
     {{- end }}
   <!-- END: YourOnly.One Body-01-Top -->
-  <article class="posts" data-clarity-region="article">
+  <article class="posts">
     <div class="row">
       <div class="col-xs-12">
         {{ partial "header.html" . }}
@@ -19,7 +19,7 @@
             <!-- <h1 class="site-date-catalog">{{ .Key }}</h1> -->
 
             {{ range .Pages.ByWeight }}
-            <div class="row posts-line">
+            <div class="h-entry row posts-line" data-clarity-region="article">
               <!--
               <div class="posts-date col-xs-3 col-sm-2">
                 <time datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time>
@@ -27,13 +27,13 @@
               -->
               <div class="posts-title col-xs-9 col-sm-12">
                 <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  <div class="p-name col-xs-11 col-sm-10">
+                    <a href="{{ .RelPermalink }}" class="u-url" rel="bookmark">{{ .Title }}</a>
                   </div>
                   <div class="col-xs-1 col-sm-2 posts-categories">
                     {{ range .Params.categories }}
                     <div class="posts-category">
-                      <a href="/categories/{{ lower . }}/"><strong>{{ . }}</strong></a>
+                      <a href="/categories/{{ lower . }}/" class="p-category" rel="category tag"><strong>{{ . }}</strong></a>
                     </div>
                     {{ end }}
                   </div>
