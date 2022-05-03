@@ -42,6 +42,9 @@
         <div class="e-content post-content markdown-body">
           {{ .Site.Params.postHeaderContent | safeHTML }}
           {{ .Content }}
+          {{ with .Params.syndications }}
+            {{ partial "syndications.html" . }}
+          {{ end }}
         </div>
 
         <div class="row middle-xs">
