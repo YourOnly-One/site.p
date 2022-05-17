@@ -20,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="{{ .Site.Author.name }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
+    <link rel="canonical" href="{{ .Permalink }}" />
   */ -}}
   {{- if .Site.Params.staticPrefix -}}
   <link rel="dns-prefetch" href="{{ .Site.Params.staticPrefix }}" />
@@ -39,19 +40,23 @@
   <title class="p-name">{{ .Site.Title }}</title>
   {{- /* YourOnly.One: We already have this
     {{- if .IsHome -}}
+      <title>{{ .Site.Title }}</title>
       <meta property="og:title" content="{{ .Site.Title }}" />
       <meta property="og:type" content="website" />
       <meta property="og:description" content="{{ .Site.Params.description }}" />
       <meta name="description" content="{{ .Site.Params.description }}" class="p-summary" />
     {{- else -}}
+      <title>{{ .Title }}</title>
       <meta property="og:title" content="{{ .Title }}" />
       <meta property="og:type" content="article" />
       <meta property="og:description" content="{{ default .Summary .Description | plainify }}" />
       <meta name="description" content="{{ default .Summary .Description | plainify }}" class="p-summary" />
     {{- end }}
-    <meta property="og:locale" content="{{ .Language.Params.languagecodehtml }}" />
+    <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
     {{- if .Params.album -}}
       <meta property="og:image" content="{{ .Params.album }}" />
+    {{- else -}}
+      <meta property="og:image" content="{{ .Site.Params.favicon }}" />
     {{ end }}
   */ -}}
 
