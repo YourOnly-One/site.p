@@ -21,9 +21,9 @@
             {{ if in .Site.Params.mainSections .Type }}
               <div class="row post-desc">
                 <div class="col-xs-6">
-                  {{ if .Date }}
-                  <time class="post-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">
-                    {{ .Date.Format "02 Jan 2006" }}
+                  {{ if .PublishDate }}
+                  <time class="post-date" datetime="{{ .PublishDate.Format "2006-01-02 15:04:05 MST" }}">
+                    {{ .PublishDate.Format "02 Jan 2006" }}
                   </time>
                   {{ end }}
                 </div>
