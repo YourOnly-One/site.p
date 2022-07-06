@@ -9,7 +9,7 @@ websubhubs = ["https://pubsubhubbub.appspot.com/", "https://youronlyone.superfee
 #googleadsense = "ca-pub-8360283248006398"
 
 ### BGN: Structured Data ###
-	description = "YourOnly.One Pages"
+	description = "YourOnly.One 🔏 Pages"
 	license = "https://im.youronly.one/p/legal-notice/"
 	keywords = ["YourOnly.One", "Yuki", "ᜌᜓᜃᜒ"] # Can be overriden per page
 	images = ["https://rsc.youronly.one/img/y/Yuki_flag-300h.webp", "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"]
@@ -35,23 +35,23 @@ websubhubs = ["https://pubsubhubbub.appspot.com/", "https://youronlyone.superfee
 
 	[[socials]]
 	#name = "《 The YOOki (柳紀 ・ 유 기) Chronicles 》"
-	name = "《 YOOki Chronicles 》"
+	name = "《 YOOki Chronicles 📜 》"
 	link = "https://im.youronly.one/yuki/"
 
 	[[socials]]
-	name = "《 Snoworld 》"
+	name = "《 Snoworld ❄️ 》"
 	link = "https://im.youronly.one/snoworld/"
 
 	[[socials]]
-	name = "《 One Way Faith 》"
+	name = "《 One Way Faith 🛐 》"
 	link = "https://im.youronly.one/way/"
 
 	[[socials]]
-	name = "《 techmagus 》"
+	name = "《 techmagus 🚀 》"
 	link = "https://im.youronly.one/techmagus/"
 
 	[[socials]]
-	name = "《 Love 》"
+	name = "《 Love 💞 》"
 	link = "https://im.youronly.one/love/"
 ### END: Theme Settings ###
 
@@ -63,7 +63,7 @@ websubhubs = ["https://pubsubhubbub.appspot.com/", "https://youronlyone.superfee
 		#issn = ""
 		acquirelicensepage = "https://im.youronly.one/p/legal-notice/"
 		copyrightnotice = "Copyleft 🄯 CC-BY-SA 4.0 International by JC John Sese Cuneta"
-		credittext = "I'M YourOnly.One (https://im.youronly.one/)"
+		credittext = "I'M YourOnly.One 🔏 (https://im.youronly.one/)"
 		datecreated = "2003-12-12"
 		#isblog = true
 		license = "https://im.youronly.one/p/legal-notice/"
