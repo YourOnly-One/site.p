@@ -1,9 +1,10 @@
 {{- $androidchrome192png := resources.Get "favicon/android-chrome-192x192.png" | resources.Fingerprint "sha384" -}}
 {{- $androidchrome512png := resources.Get "favicon/android-chrome-512x512.png" | resources.Fingerprint "sha384" -}}
 {
-  "name": "YourOnly.One Pages",
+  "name": "YourOnly.One™ 🔏 Pages",
   "short_name": "Pages",
-  "description": "YourOnly.One Pages",
+  "description": "YourOnly.One 🔏 Pages",
+  "id": "/p/",
   "dir": "auto",
   "lang": "en-PH",
   "categories": ["YourOnly.One"],
