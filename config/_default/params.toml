@@ -30,28 +30,28 @@ websubhubs = ["https://pubsubhubbub.appspot.com/", "https://youronlyone.superfee
   #postFooterContent = "<br/><br/><p>Subscribe：<a target='_blank' href='https://mailchi.mp/a1a0d59e7a19/joway'>Joway's Blog</a></p>"
 
   [[socials]]
-  name = "《 Home 》"
+  name = "«Home»"
   link = "https://im.youronly.one"
 
   [[socials]]
-  #name = "《 The YOOki (柳紀 ・ 유 기) Chronicles 》"
-  name = "《 YOOki Chronicles 📜 》"
+  #name = "« The YOOki (柳紀 ・ 유 기) Chronicles »"
+  name = "«YOOki Chronicles 📜»"
   link = "https://im.youronly.one/yuki/"
 
   [[socials]]
-  name = "《 Snoworld ❄️ 》"
+  name = "«Snoworld ❄️»"
   link = "https://im.youronly.one/snoworld/"
 
   [[socials]]
-  name = "《 One Way Faith 🛐 》"
+  name = "«One Way Faith 🛐»"
   link = "https://im.youronly.one/way/"
 
   [[socials]]
-  name = "《 techmagus 🚀 》"
+  name = "«techmagus 🚀»"
   link = "https://im.youronly.one/techmagus/"
 
   [[socials]]
-  name = "《 Love 💞 》"
+  name = "«Love 💞»"
   link = "https://im.youronly.one/love/"
 ### END: Theme Settings ###
 
