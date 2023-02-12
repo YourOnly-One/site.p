@@ -23,7 +23,7 @@ favicon_mstilecolor = "#2b5797"
   #extraCSSFiles = ["css/foo.css", "css/bar.css"]
   mainSections = ["pages"]
 
-  ## In a post’s front matter, include a keyword images with a value of a list of URLs of images that will be used for Twitter Cards.
+  ## In a post's front matter, include a keyword images with a value of a list of URLs of images that will be used for Twitter Cards.
   twitterCards = true
 
   ## Insert content on every post
