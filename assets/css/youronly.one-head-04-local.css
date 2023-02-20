@@ -1,6 +1,6 @@
 body {
-	font-family: bree serif, var(--base-sans-font);
+  font-family: bree serif, sans-serif;
 }
 .header-title {
-	font-family: bungee shade, var(--base-sans-font);
+  font-family: bungee shade, sans-serif;
 }
