@@ -72,10 +72,12 @@
           {{ end }}
           <!-- split -->
           <div class="singlesplit"></div>
+          {{- /* YourOnlyOne: not needed for this site
           <div class="post-comments">
             {{ template "_internal/webmention.html" . }}
             <div id="webmentions"></div>
           </div>
+          */ -}}
           {{ if .Site.Params.disqus }}
           <div class="post-comments">
             {{ partial "disqus.html" . }}
