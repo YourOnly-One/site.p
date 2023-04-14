@@ -30,21 +30,25 @@ workspace = "off"
   path = "codeberg.org/youronlyone/content"
   # BGN: /p/ content
     #[[imports.mounts]]
-    #  source = "p/en-ph"
+    #  source = "content/p/en-ph"
     #  target = "content"
     #  lang = "en"
     [[imports.mounts]]
-      source = "p/en-ph"
+      source = "content/p/en-ph"
       target = "content"
       lang = "en-ph"
     #[[imports.mounts]]
-    #  source = "p/ja"
+    #  source = "content/p/ja"
     #  target = "content"
     #  lang = "ja"
     #[[imports.mounts]]
-    #  source = "p/ko"
+    #  source = "content/p/ko"
     #  target = "content"
     #  lang = "ko"
+    [[imports.mounts]]
+      source = "data/p"
+      target = "data"
+      lang = "en-ph"
   # END: /p/ content
 
 [[imports]]
