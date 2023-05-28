@@ -52,7 +52,7 @@
       <meta property="og:description" content="{{ default .Summary .Description | plainify }}" />
       <meta name="description" content="{{ default .Summary .Description | plainify }}" class="p-summary" />
     {{- end }}
-    <meta property="og:locale" content="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}" />
+    <meta property="og:locale" content="{{ or (.Site.Language.LanguageCode) (.Site.Language.Lang) }}" />
     {{- if .Params.album -}}
       <meta property="og:image" content="{{ .Params.album }}" />
     {{- else -}}
