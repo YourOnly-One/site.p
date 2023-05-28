@@ -24,7 +24,7 @@
 ####### BACKEND #######
   #canonifyURLs = true                                      # default: false; marked for removeal; true for our use-case
 
-  disableKinds = ["section", "taxonomy", "term", "taxonomyTerm", "RSS", "robotsTXT"]
+  disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
   enableMissingTranslationPlaceholders = true              # default: false
   #timeout = "30s"                                           # default: 30s
 
